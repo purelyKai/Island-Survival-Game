@@ -1,0 +1,14 @@
+~ npc
+
+if global.given_slimes_item == false
+	Lonely-Man: You've found me! What brings you here?
+	- How can I escape this island?
+	Lonely-Man: There is a secret exit somewhere on the SOUTH side of this island. However, the exit is locked unless you have the key.
+	- Where can I find the key?
+	Lonely-Man: I cannot asnwer that question. You have to go talk to the Noob-Boy!
+	- Where is the Noob-Boy?
+	Lonely-Man: The Noob-Boy is at the EAST side of this Island, keep walking and talk to him.
+	Lonely-Man: Be caution, there's monsters around here!
+	Lonely-Man: Good luck!
+
+=> END

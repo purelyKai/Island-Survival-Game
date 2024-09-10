@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://y4ga1qqqxsdn"
+path="res://.godot/imported/npcCave.dialogue-6c46ccd1950fe2b89835be1fc8524f1e.tres"
+
+[deps]
+
+source_file="res://dialogue/npcCave.dialogue"
+dest_files=["res://.godot/imported/npcCave.dialogue-6c46ccd1950fe2b89835be1fc8524f1e.tres"]
+
+[params]
+
+defaults=true

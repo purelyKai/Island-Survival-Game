@@ -1,0 +1,21 @@
+~ npc2
+
+
+
+if global.boss_dead:
+	Noob-Boy: Hi again..... Did you killed the Monster?
+	- Yes! the Monster is DEAD!
+	Noob-Boy: BOSS IS DEAD???!!!!!!!!???!!!!
+	Noob-Boy: SUIIIIIIIIIIIIIIIIIIII!!!!!!!!!!!!!!!!!!
+	Noob-Boy: Now you can escape from this Island! Go to the SOUTH of this island.
+	Noob-Boy: And keep walking toward the jungle then get into the secret portal to escape!
+	Noob-Boy: Thank you for killing the Monster for us!
+	Noob-Boy: Good luck!
+=> END
+else:
+	Noob-Boy: Hello Noobie! Why are you here?
+	- The Lonely-Man told me to talk to you sir!!!
+	Noob-Boy: Go into that cave and talk to the Cave-Man.
+	Noob-Boy: He will tell you what to do and come out survive to talk to me again and I will lead you to the way out.
+	Noob-Boy: Good luck!
+=> END

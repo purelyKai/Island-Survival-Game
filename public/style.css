@@ -1,0 +1,50 @@
+body {
+    background-image: url('web/background.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('web/sky.jpg');
+    
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 20px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid none;
+    
+}
+
+section p{
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+    font-size: large;
+    box-shadow: #2afc00;
+    font-weight: bold;
+    background-color: #6b4f00fd;
+    border: 2px solid #503b00fd;
+    border-radius: 10px;
+}
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #8a680cfd;
+    color: #ffffff;
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid #503b00fd;
+    border-radius: 10px;
+}

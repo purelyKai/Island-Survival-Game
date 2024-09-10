@@ -1,0 +1,84 @@
+[gd_scene load_steps=6 format=3 uid="uid://b8fuw8p1tf088"]
+
+[ext_resource type="Script" path="res://scripts/day_and_night.gd" id="1_mcy7i"]
+
+[sub_resource type="Animation" id="Animation_11myj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0.588235)]
+}
+
+[sub_resource type="Animation" id="Animation_3kn5e"]
+resource_name = "daytonight"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 0.588235)]
+}
+
+[sub_resource type="Animation" id="Animation_l6jxa"]
+resource_name = "nightoday"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0.588235), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_47qxc"]
+_data = {
+"RESET": SubResource("Animation_11myj"),
+"daytonight": SubResource("Animation_3kn5e"),
+"nightoday": SubResource("Animation_l6jxa")
+}
+
+[node name="Node2D" type="Node2D"]
+
+[node name="day_and_night" type="StaticBody2D" parent="."]
+script = ExtResource("1_mcy7i")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="day_and_night"]
+root_node = NodePath("../ColorRect")
+libraries = {
+"": SubResource("AnimationLibrary_47qxc")
+}
+
+[node name="ColorRect" type="ColorRect" parent="day_and_night"]
+offset_left = -2859.0
+offset_top = -1466.0
+offset_right = 1247.0
+offset_bottom = 1656.0
+scale = Vector2(1.97777, 1.64011)
+color = Color(0, 0, 0, 0.588235)
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="day_and_night"]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="day_and_night/Timer" to="day_and_night" method="_on_timer_timeout"]

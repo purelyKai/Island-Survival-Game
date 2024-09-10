@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://qaxflhk8e5l3"
+path="res://.godot/imported/goatMan.dialogue-215029f04405ea5afa33741048233735.tres"
+
+[deps]
+
+source_file="res://dialogue/goatMan.dialogue"
+dest_files=["res://.godot/imported/goatMan.dialogue-215029f04405ea5afa33741048233735.tres"]
+
+[params]
+
+defaults=true
