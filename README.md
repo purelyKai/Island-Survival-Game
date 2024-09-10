@@ -8,7 +8,7 @@ This Island Survival Game is an online survival game developed using the Godot E
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Island-Survival-Game.git
+   git clone https://github.com/purelyKai/Island-Survival-Game.git
 2. Navigate to the project directory:
    ```bash
    cd Island-Survival-Game
